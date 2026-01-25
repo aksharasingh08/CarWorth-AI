@@ -41,6 +41,6 @@ def predict():
 import os
 
 if __name__ == "__main__":
-    print("🚀 Starting HealthCoverAI Backend Server...")
+    print("🚀 Starting CarWorth AI Backend Server...")
     print("📊 Model Status:", "Loaded ✅" if model else "Not Found ❌")
-    app.run(host="0.0.0.0", port=5000)
+    app.run()
