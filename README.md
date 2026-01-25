@@ -78,66 +78,9 @@ car/
 
 ---
 
-## 🚀 How to Run Locally
-
-1. Clone the repository
-
-```bash
-git clone <repo-url>
-cd car
-```
-
-2. Create a virtual environment & install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-3. Run the Flask app
-
-```bash
-python app.py
-```
-
-4. Open browser and visit:
-
-```
-http://127.0.0.1:5000/
-```
-
----
-
 ## 📊 Model Performance
 
 * Algorithm: **Linear Regression**
 * Accuracy: **~90%**
 * Optimized using hyperparameter tuning
 
----
-
-## ✨ Key Highlights
-
-* End-to-end ML project (EDA → Model → Deployment)
-* Clean and beginner-friendly codebase
-* Real-world use case
-* Interactive web interface
-* Resume-ready project
-
----
-
-## 📌 Future Improvements
-
-* Try advanced models (Random Forest, XGBoost)
-* Add brand-wise performance comparison
-* Improve UI with JavaScript
-* Deploy on cloud with database support
-
----
-
-## 🙌 Acknowledgement
-
-This project was built as a hands-on learning experience to strengthen skills in **Machine Learning, Flask, and deployment workflows**.
-
----
-
-⭐ If you like this project, feel free to star the repo and share feedback!
