@@ -61,7 +61,7 @@ Home page
 
 ![Home Page](homepage1.png)
 
-# Car Details Form
+Car Details Form
 
 ![Input Form](inputs.png)
 
