@@ -1,86 +1,82 @@
-# 🚗 Car Price Predictor
+# 🚗 CarWorth AI – Car Price Prediction System
 
-A clean, practical, and end-to-end **Machine Learning + Web App** project that predicts the **resale price of a car** based on real-world features. This project combines **data analysis, model building, and web deployment** into one smooth experience.
+CarWorth AI is a Machine Learning–based web application that predicts the **resale price of a car** using real-world data.  
+By analyzing factors such as car brand, model, fuel type, year of manufacture, and kilometers driven, the system provides a **fair and data-driven price estimate** for used cars.
 
----
-
-## 🔍 Project Overview
-
-Buying or selling a used car often involves guesswork. This project aims to remove that uncertainty by predicting a car’s price using historical data and machine learning.
-
-The application takes the following inputs:
-
-* 🚘 **Car Brand**
-* 🧾 **Car Model**
-* ⛽ **Fuel Type**
-* 📅 **Year of Purchase**
-* 🛣️ **Kilometers Driven**
-
-…and instantly returns a **predicted resale price**.
-
-The model is trained using **Linear Regression** with **hyperparameter tuning**, achieving around **90% accuracy**.
+This project combines data preprocessing, machine learning, and a clean web interface to deliver reliable price predictions.
 
 ---
 
-## 🧠 Machine Learning Workflow
+# Key Features
 
-* Data cleaning & preprocessing
-* Exploratory Data Analysis (EDA)
-* Feature selection & encoding
-* Model training using **Linear Regression**
-* Hyperparameter tuning for better performance
-* Model serialization using `pickle`
-
----
-
-## 🌐 Web Application
-
-The ML model is deployed using **Flask** and presented through a **two-page interactive website** built with:
-
-* **HTML & CSS** for UI
-* **Flask** for backend integration
-
-### Pages:
-
-* **Home Page** – Introduction and navigation
-* **Prediction Page** – Input car details and get instant price prediction
+- Instant car resale price prediction  
+- Trained on real-world used car data  
+- ~90% prediction accuracy  
+- Optimized Linear Regression model  
+- Clean and user-friendly web UI  
 
 ---
 
-## 🛠️ Tech Stack
+# Machine Learning Overview
 
-* **Python**
-* **Flask**
-* **HTML / CSS**
-* **NumPy**
-* **Pandas**
-* **Scikit-learn**
-* **Gunicorn** (for deployment)
+- Algorithm Used: Linear Regression  
+- Model Optimization: Hyperparameter tuning  
+- Accuracy Achieved: ~90%  
 
----
-
-## 📁 Project Structure
-
-```
-car/
-├── app.py
-├── templates/
-│   ├── index.html
-│   └── predictor.html
-├── static/
-│   ├── styles.css
-│   └── assets/
-├── LinearRegressionModel.pkl
-├── Cleaned_Car_data.csv
-├── requirements.txt
-├── README.md
-```
+# Why Linear Regression?
+- Works well for continuous price prediction  
+- Easy to interpret and explain  
+- Efficient and reliable for structured tabular data  
 
 ---
 
-## 📊 Model Performance
+# Data Cleaning & Preprocessing
 
-* Algorithm: **Linear Regression**
-* Accuracy: **~90%**
-* Optimized using hyperparameter tuning
+Real-world car resale data contained missing, inconsistent, and non-numeric values. The following preprocessing steps were applied to improve data quality and model performance:
 
+- **Year:** Removed non-numeric values and converted the column to integer.
+- **Price:** Removed rows with `"Ask For Price"`, eliminated commas, and converted prices to integers.
+- **Kilometers Driven:** Extracted numeric values, removed invalid entries, and converted to integer format.
+- **Fuel Type:** Removed rows with missing fuel type values.
+- **Car Name:** Standardized names by keeping only the first three words.
+
+Final dataset: 816 rows × 6 columns
+
+The cleaned dataset was then encoded and used for training the ML model.
+
+# Web Application Overview
+
+The web application allows users to input car details such as:
+* Company
+* Car Model
+* Manufacturing Year
+* Fuel Type
+* Kilometers Driven
+
+Upon submission, the trained ML model predicts the best possible resale price.
+
+# Screenshots
+
+Home page 
+
+![Home Page](homepage1.png)
+
+# Car Details Form
+![Input Form](screenshots/input-form.png)
+
+---
+
+# Tech Stack
+
+* Language: Python
+* Machine Learning: Scikit-learn
+* Algorithm: Linear Regression
+* Frontend: HTML, CSS
+* Backend: Flask
+* Libraries: NumPy, Pandas, Scikit-learn, Pickle
+
+---
+
+# Conclusion
+
+CarWorth AI demonstrates how effective data cleaning combined with a well-optimized Machine Learning model can deliver accurate and practical car resale price predictions through a simple and user-friendly web application.
